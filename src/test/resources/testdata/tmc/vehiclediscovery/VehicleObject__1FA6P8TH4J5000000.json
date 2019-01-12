@@ -1,0 +1,99 @@
+{
+    "modified": "2018-01-24T19:50:20.995Z",
+	"created" : "2018-05-30T13:50:30.437Z",
+    "tags": {
+        "deploymentProtocol": "rest",
+        "campaignID": "IVSU_0001",
+        "deploymentURL": "http://www.httpbin.org/post",
+        "domain": "infotainment",
+        "domainInstance": "Rose",
+        "domainInstanceVersion": "1.2",
+        "programCode": "C344N",
+        "modelYear": "2017"
+    },
+    "tenant_id": "ed67d6c9-3f14-4e7d-8d08-94265a53f326",
+    "name": "1FA6P8TH4J5000000",
+    "id": "264b362c-f185-4984-8fae-46627a4430e1",
+    "type": "assets/vehicle",
+    "year": "2018",
+    "pid": {},
+    "model": "Mustang",
+    "vin": "1FA6P8TH4J5000000",
+    "fleet_id": "c5fa4865-b275-4c3a-b46d-c1e6d2ebd587",
+    "modules": [
+        {
+            "name": "ECG",
+            "address": "716",
+            "dids": [
+				{
+					"name" : "F111",
+					"value" : "MU5T-14H026-AA"
+				},
+				{
+					"name" : "F000",
+					"value" : "DAVE-14H027-AA"
+				},
+				{
+					"name" : "F001",
+					"value" : "DAVE-14H027-BA"
+				},
+                {
+                    "name": "8061",
+                    "value": "[{\"name\":\"checkWindows3\",\"fileType\":\"script\",\"version\":\"1.8\"},{\"name\":\"monitorInteriorForMotion3\",\"fileType\":\"script\",\"version\":\"1.0\"}]"
+                },
+                {
+                    "name": "8060",
+                    "value": "Script.2,Script.8,Script.7"
+                },
+                {
+                    "name": "F188",
+                    "value": "GB5T-10GREF-INS0"
+                },
+                {
+                    "name": "F124",
+                    "value": "GB5T-10GREF-JKS0"
+                },
+                {
+                    "name": "F10A",
+                    "value": "GB5T-10GRTF-INS0"
+                },
+                {
+                    "name": "F113",
+                    "value": "GB4F-10GREF-JKS0"
+                },
+                {
+                    "name": "8033",
+                    "value": "GB5T-1FGREF-JKS0"
+                }
+            ]
+        },
+        {
+            "name": "APIM",
+            "address": "7D0",
+            "dids": [
+                {
+                    "name": "8065",
+                    "value": "[{\"name\":\"checkWindows3\",\"fileType\":\"script\",\"version\":\"1.8\"},{\"name\":\"monitorInteriorForMotion3\",\"fileType\":\"script\",\"version\":\"1.0\"}]"
+                },
+                {
+                    "name": "F111",
+                    "value": "HN1T-14G380-BA"
+                },
+                {
+                    "name": "8033",
+                    "value": "ZDCA-14G381-AA"
+                },
+                {
+                    "name": "8060",
+                    "value": " GB5T-10GREF-INS9"
+                },
+                {
+                    "name": "F18C",
+                    "value": "ASDFASDF12"
+                }
+            ]
+        }
+    ],
+    "make": "Digital Jukebox Technologies. LLC.",
+    "trim": ""
+}

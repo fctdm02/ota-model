@@ -1,0 +1,35 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Eclipse ###
+.apt_generated
+.factorypath
+.springBeans
+bin
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Compiled Class file
+*.class
+out
+bin
+.gradle/
+/buildOutputCleanup/
+/buildOutputCleanup/cache.properties
+
+config/checkstyle/checkstyle.xml
+
+lombok*

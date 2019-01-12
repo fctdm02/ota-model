@@ -1,0 +1,71 @@
+-- GLOBAL OTA CLOUD AND VEHICLE POLICIES
+--
+-- Column Number:
+--  0 - policyType: either 'VehiclePolicy' or 'CloudPolicy'
+--  1 - globalPolicyName: unique name for policy
+--  2 - globalPolicyDescription: description of policy
+--  3 - allowRegionalChangeable: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+--  4 - policyValue: The 'default value' for the policy (the data type is determined by the 
+--  5 - hmi: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+--  6 - phone: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+--  7 - allowUserChangeable: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+--  8 - allowServiceChangeable: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+--  9 - allowCustomerFeedback: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+-- 10 - vehicleHmiFile: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+-- 11 - otaFunction: Vehicle Policy Only: Whether or not the policy can be overridden at the regional level
+-- 12 - policyValueType: An enum value that is either STRING, NUMERIC, BOOLEAN or ENUM
+-- 13 - policyValueConstraints: (if Type is 'ENUM', then Constraints contains a "_" (underscore symbol) delimited list of possible values)
+--			
+--			Example Vehicle Policy:
+--			VehiclePolicy,Level1Authorization,Safety and security updates. No additional consent provided by customer,Y,RegionCountryFile,Read/Write,None,Y,Y,N,,OTA MANAGER,
+--			
+--			Example Cloud Policy:
+--			CloudPolicy,unbreakableManifestTime,Time for the vehicle to download/install what is in the manifest as a unit, beyond this time, the vehicle can break up the rollout, NULL, 14, NULL, NULL, NULL, NULL, NULL, NULL,NULL, NUMERIC, 0_60
+-- 
+--policyType, globalPolicyName, globalPolicyDescription, allowRegionalChangeable, policyValue, hmi, phone, allowUserChangeable, allowServiceChangeable, allowCustomerFeedback, vehicleHmiFile, otaFunction, policyValueType, policyValueConstraints
+-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VehiclePolicy,Level1Authorization,Safety and security updates. No additional consent provided by customer,Y,RegionCountryFile,Read/Write,None,Y,Y,N,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Level2Authorization,This includes all improvements to any component,Y,RegionCountryFile,Read/Write,None,Y,Y,N,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Level3Authorization,We require PII information for the update,Y,RegionCountryFile,Read/Write,None,Y,Y,N,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Level4Authorization,Digital Jukebox Technologies. LLC. push of software independent of customer authorization,Y,RegionCountryFile,None,None,N,N,N,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,OneTimeAuthorization,For a One Time Consent. Display HMI notificaiton that an update is available. This applies to Level2Authorization updates,Y,RegionCountryFile,Read/Write,Read,Y,Y,Y,4,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Battery SOC,The minimum value required on SOC prior to any action in ignition off,N,65%,None,None,N,N,N,NONE,OTA_MANAGER,STRING,NONE
+VehiclePolicy,DefaultScheduledSetting,To display in the HMI a default time that will be used for each update,Y,ALLOW,Read,None,Y,N,N,,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,ScheduleTimeRange,the range for the software update scheduler,N,24 hrs,Read,None,,,,,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,PreActivationNotifaction,A reminder for the sw update that will get activated at the chosen time,N,DISPLAY,Read,Read,Y,N,N,,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,NotificationStatus,The notification will be in the vehicle and any other system that customer has subscribed thru the Owner Webesite,N,YES,Read/Write,Read,,,,,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,DefaultConTypeWaitTime,Time the vehilce will wait for a connection to be established prior to requesting a customer feedback,N,48 hrs,None,None,N,N,Y,5,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,DefaultConTypeHMINotice_Retry,How many times to display a request for connection to the customer prior to switching connection,N,3,,,,,,,OTA_MANAGER_HMI,STRING,NONE
+VehiclePolicy,DCTHNR_Frequency,DefaultConTypeHMINotice_Retry frequency,N,48 hrs,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,ConnectionPriority,Array of the connection priority. Top is the highest priority,N,Cellular,,,,,,,OTA_MANAGER_HMI,ENUM,Wi-Fi_Cellular_AppLink
+VehiclePolicy,Status Chunk Max Size,Default IVSU status chunk size for each campaign,N,80K,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,Status chunk cache Max Size,Default IVSU status chunk overall size limit,N,640K,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,Status upload frequency,Default IVSU status chunk upload frequency,N,24hr,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,Max Status Chunk Queue Cache Size,Default Size limit for upload pending status queue,N,5Mb,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,Max Status Chunk Queue number,Default number limit for chunks per campaign in upload pending status queue,N,10,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,Status Upload Medium whitelist,Default whitelist medium for status to be upload to cloud,N,Wi-Fi Cellular,None,None,N,Y,N,NONE,OTA_STATUS_MANAGER,STRING,NONE
+VehiclePolicy,DWPreferedTime,The prefered time to download from the cloud,N,2 - 4 AM,,,,,,,DOWNLOAD_MANAGER,STRING,NONE
+VehiclePolicy,HTTPS Client timeout ,,,120 sec,,,,,,,DOWNLOAD_MANAGER,STRING,NONE
+VehiclePolicy,NavLocalUpdateTriggerPeriod,,,48 hrs,,,,,,,,STRING,NONE
+VehiclePolicy,MaxECUsPerSWCampaign,,,8,,,,,,,,STRING,NONE
+VehiclePolicy,MaxNumConcurrentSWCampaign,,,3,,,,,,,,STRING,NONE
+VehiclePolicy,DataConsumptionMaxSize,,,50 MB,,,,,,,,STRING,NONE
+VehiclePolicy,DataConsumptionPeriod,,,ConnectionCycle,,,,,,,,STRING,NONE
+VehiclePolicy,Automatic Periodic Trigger Days,,,30,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Automatic Periodic Trigger Mileage,,,10000,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Automatic Periodic Trigger Ignition Count,,,265,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Automatic PeriodicTrigger Authorization Level,,,Level2Authorization,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Event Based Trigger Authorization Level,,,Level2Authorization,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Map Update Authorization Level,,,Level3Authorization,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Policy Update On Update Check,Used to check for policy update at time of VIL update check.,N,YES,,,,,,,IVSU_TRIGGER,STRING,NONE
+VehiclePolicy,Policy Update On X Days,,,,,,,,,,VEHICLE_OTA_POLICY,STRING,NONE
+VehiclePolicy,Policy Update On X Mileage,,,,,,,,,,VEHICLE_OTA_POLICY,STRING,NONE
+VehiclePolicy,Policy Update On X Ignition,,,,,,,,,,VEHICLE_OTA_POLICY,STRING,NONE
+VehiclePolicy,Power_Mode,,,,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Master_RESET,,,,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,SOC,,,,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,E_CALL,,,,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,Airbag_Status,,,,,,,,,,OTA_MANAGER,STRING,NONE
+VehiclePolicy,load_shed ,,,,,,,,,,OTA_MANAGER,STRING,NONE
+CloudPolicy,unbreakableManifestTime,Time for the vehicle to download/install what is in the manifest as a unit beyond this time the vehicle can break up the rollout,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NUMERIC,0_60
+CloudPolicy,vehicleInhibitActivationTime,Time that the vehicle is inoperable in minutes,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NUMERIC,0_60

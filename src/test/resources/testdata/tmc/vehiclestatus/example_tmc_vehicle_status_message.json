@@ -1,0 +1,19 @@
+{
+  "request_id": "zelda",
+  "vehicle_id": "a4e1bf00-d5a9-42c6-a6b4-43573426467f",
+  "timestamp": "2018-03-22T23:31:22.142Z",
+  "fields": {"deployment": {
+    "correlation_id": {
+      "time": "2018-03-22T23:31:22.142Z",
+      "value": "8a679b5e-6872-45ad-89ac-4bd4d3d9d41f"
+    },
+    "state": {
+      "time": "2018-03-22T23:31:22.142Z",
+      "value": "DEPLOYMENT_SUCCEEDED"
+    },
+    "additional_data": {
+      "time": "2018-03-22T23:31:22.142Z",
+      "value": "{ \"campaignID\": \"8a679b5e-6872-45ad-89ac-4bd4d3d9d41f\" }, { \"lookupCode\": \"OTAM_S1010_100_234_456_234_2969\" }"
+    }
+  }}
+}

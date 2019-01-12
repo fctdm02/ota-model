@@ -1,0 +1,264 @@
+{
+    "domainName": "ABS",
+    "domainDescription": "ANTI/LK CONTR ELETR-Antilock Brake System Domain for all vehicles",
+    "ecuNodes": [
+        {
+            "ecuAcronymName": "ABS",
+            "ecuLogicalAddress": "760"
+        }
+    ],
+    "domainInstances": [
+        {
+            "domainInstanceName": "ABS_SEED_INSTANCE_TEST_0001",
+            "domainInstanceVersion": "01.01.00",
+            "domainInstanceDescription": "Seed data for VADR",
+            "releaseState": "RELEASED",
+            "ecuHardwares": [
+                {
+                    "ecuAcronymName": "ABS",
+                    "ecuLogicalAddress": "760",
+                    "ecuHardwarePartNumber": "HG9C-14F065-AA0001"
+                }
+            ],
+            "ecuSoftwares": [
+                {
+                    "ecuAcronymName": "ABS",
+                    "ecuLogicalAddress": "760",
+                    "ecuSoftwarePartNumber": "HG9C-2D053-AD",
+                    "softwareName": "HG9C-2D053-AD001.vbf",
+                    "binaryMetadata": {
+                        "fileId": 12977,
+                        "ecuAcronymName": "ABS",
+                        "ecuLogicalAddress": "760",
+                        "publicKeyHash": "",
+                        "swPartNumber": "HG9C-2D053-AD",
+                        "legacySwPartType": "EXE",
+                        "swCategory": "BINARY_APPLICATION",
+                        "swClassification": "PRODUCTION",
+                        "isOvtp": true,
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [
+                            {
+                                "startAddress": "0x00020000",
+                                "length": "0x0000FFFF"
+                            },
+                            {
+                                "startAddress": "0x00030000",
+                                "length": "0x001CFFFF"
+                            }
+                        ],
+                        "verificationLogicalBlocks": [],
+                        "autonomicUrl": "https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-12977",
+                        "fileName": "HG9C-2D053-AD001.vbf",
+                        "fileFormat": "APPLICATION_BINARY",
+                        "description": "Testing strategy file for ABS domain-Picked from IVS-ABS assembly HG9C-2C219-AD defined for CD391N-2017",
+                        "unzippedFileSize": 1484469,
+                        "zippedFileSize": 0,
+                        "vbfVersion": "2.4",
+                        "dataFormatIdentifier": "0x00",
+                        "frameFormat": "CAN_STANDARD",
+                        "callStartAddress": "",
+                        "fileChecksum": "0xCD1FB6C7",
+                        "fileFingerprint": "",
+                        "programProtected": true,
+                        "firmwareInstallType": "",
+                        "lastModifiedTimestamp": 1533752621309
+                    }
+                }
+            ],
+            "applications": [
+                {
+                    "appId": "ABS-ECU Configuration APA-Test_01.01.00",
+                    "appName": "ABS-ECU Configuration APA-Test",
+                    "appVersion": "01.01.00",
+                    "description": "Anti-lock Brake Config for APA - Asia Pacific",
+                    "ownerGroup": "ABS Module Team",
+                    "ownerKeyContact": "PGautam1",
+                    "requiresSubscription": false,
+                    "applicationNecessity": "MANDATORY",
+                    "releaseState": "RELEASED",
+                    "applicationDependencies": [],
+                    "binaryMetadatas": [
+                        {
+                            "fileId": 12978,
+                            "swPartNumber": "12978",
+                            "programLogicalBlocks": [],
+                            "eraseLogicalBlocks": [],
+                            "verificationLogicalBlocks": [],
+                            "unzippedFileSize": 0,
+                            "zippedFileSize": 0,
+                            "programProtected": false,
+                            "lastModifiedTimestamp": 1533752619700
+                        },
+                        {
+                            "fileId": 12978,
+                            "ecuAcronymName": "ABS",
+                            "ecuLogicalAddress": "760",
+                            "publicKeyHash": "",
+                            "swPartNumber": "HG9C-14C602-AD",
+                            "legacySwPartType": "DATA",
+                            "swCategory": "BINARY_APPLICATION",
+                            "swClassification": "PRODUCTION",
+                            "isOvtp": true,
+                            "programLogicalBlocks": [],
+                            "eraseLogicalBlocks": [
+                                {
+                                    "startAddress": "0x00020000",
+                                    "length": "0x0000FFFF"
+                                }
+                            ],
+                            "verificationLogicalBlocks": [],
+                            "autonomicUrl": "https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-12978",
+                            "fileName": "HG9C-14C602-AD001.vbf",
+                            "fileFormat": "APPLICATION_BINARY",
+                            "description": "Testing ECU Configuration file from IVS assembly HG9C-2C219-AD defined for CD391N-2017",
+                            "unzippedFileSize": 30445,
+                            "zippedFileSize": 0,
+                            "vbfVersion": "2.4",
+                            "dataFormatIdentifier": "0x00",
+                            "frameFormat": "CAN_STANDARD",
+                            "callStartAddress": "",
+                            "fileChecksum": "0x81294077",
+                            "fileFingerprint": "",
+                            "programProtected": true,
+                            "firmwareInstallType": "",
+                            "lastModifiedTimestamp": 1533752622333
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "domainInstanceName": "ABS_SEED_INSTANCE_TEST_0001",
+            "domainInstanceVersion": "01.02.00",
+            "domainInstanceDescription": "Seed data for VADR",
+            "releaseState": "RELEASED",
+            "ecuHardwares": [
+                {
+                    "ecuAcronymName": "ABS",
+                    "ecuLogicalAddress": "760",
+                    "ecuHardwarePartNumber": "HG9C-14F065-AA0001"
+                }
+            ],
+            "ecuSoftwares": [
+                {
+                    "ecuAcronymName": "ABS",
+                    "ecuLogicalAddress": "760",
+                    "ecuSoftwarePartNumber": "HG9C-2D053-AE",
+                    "softwareName": "HG9C-2D053-AE001.vbf",
+                    "binaryMetadata": {
+                        "fileId": 12987,
+                        "ecuAcronymName": "ABS",
+                        "ecuLogicalAddress": "760",
+                        "publicKeyHash": "",
+                        "swPartNumber": "HG9C-2D053-AE",
+                        "legacySwPartType": "EXE",
+                        "swCategory": "BINARY_APPLICATION",
+                        "swClassification": "PRODUCTION",
+                        "isOvtp": true,
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [
+                            {
+                                "startAddress": "0x00020000",
+                                "length": "0x0000FFFF"
+                            },
+                            {
+                                "startAddress": "0x00030000",
+                                "length": "0x001CFFFF"
+                            }
+                        ],
+                        "verificationLogicalBlocks": [],
+                        "autonomicUrl": "https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-12987",
+                        "fileName": "HG9C-2D053-AE001.vbf",
+                        "fileFormat": "APPLICATION_BINARY",
+                        "description": "Testing strategy file for ABS domain-Picked from IVS-ABS assembly HG9C-2C219-AE defined for CD391N-2017",
+                        "unzippedFileSize": 1484645,
+                        "zippedFileSize": 0,
+                        "vbfVersion": "2.4",
+                        "dataFormatIdentifier": "0x00",
+                        "frameFormat": "CAN_STANDARD",
+                        "callStartAddress": "",
+                        "fileChecksum": "0xFC88D37C",
+                        "fileFingerprint": "",
+                        "programProtected": true,
+                        "firmwareInstallType": "",
+                        "lastModifiedTimestamp": 1533752621690
+                    }
+                }
+            ],
+            "applications": [
+                {
+                    "appId": "ABS-ECU Configuration APA-Test_01.02.00",
+                    "appName": "ABS-ECU Configuration APA-Test",
+                    "appVersion": "01.02.00",
+                    "description": "Anti-lock Brake Config for APA - Asia Pacific",
+                    "ownerGroup": "ABS Module Team",
+                    "ownerKeyContact": "PGautam1",
+                    "requiresSubscription": false,
+                    "releaseState": "RELEASED",
+                    "applicationDependencies": [],
+                    "binaryMetadatas": [
+                        {
+                            "fileId": 12988,
+                            "swPartNumber": "12988",
+                            "programLogicalBlocks": [],
+                            "eraseLogicalBlocks": [],
+                            "verificationLogicalBlocks": [],
+                            "unzippedFileSize": 0,
+                            "zippedFileSize": 0,
+                            "programProtected": false,
+                            "lastModifiedTimestamp": 1533752620803
+                        },
+                        {
+                            "fileId": 12988,
+                            "ecuAcronymName": "ABS",
+                            "ecuLogicalAddress": "760",
+                            "publicKeyHash": "",
+                            "swPartNumber": "HG9C-14C602-AE",
+                            "legacySwPartType": "DATA",
+                            "swCategory": "BINARY_APPLICATION",
+                            "swClassification": "PRODUCTION",
+                            "isOvtp": true,
+                            "programLogicalBlocks": [],
+                            "eraseLogicalBlocks": [
+                                {
+                                    "startAddress": "0x00020000",
+                                    "length": "0x0000FFFF"
+                                }
+                            ],
+                            "verificationLogicalBlocks": [],
+                            "autonomicUrl": "https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-12988",
+                            "fileName": "HG9C-14C602-AE001.vbf",
+                            "fileFormat": "APPLICATION_BINARY",
+                            "description": "Testing ECU Configuration file from IVS assembly HG9C-2C219-AE defined for CD391N-2017",
+                            "unzippedFileSize": 30445,
+                            "zippedFileSize": 0,
+                            "vbfVersion": "2.4",
+                            "dataFormatIdentifier": "0x10",
+                            "frameFormat": "CAN_STANDARD",
+                            "callStartAddress": "",
+                            "fileChecksum": "0xBD6C3FE2",
+                            "fileFingerprint": " ",
+                            "programProtected": true,
+                            "firmwareInstallType": "",
+                            "lastModifiedTimestamp": 1533752622008
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "domainDependencies": [],
+    "validationWarnings": [
+        "Application[ABS-ECU Configuration APA-Test_01.01.00_[]]: 'region' must be specified.",
+        "Application[ABS-ECU Configuration APA-Test_01.01.00_[]]: BinaryMetadata with persistentIdentity: [12978] is missing.",
+        "Application[ABS-ECU Configuration APA-Test_01.02.00_[]]: 'region' must be specified.",
+        "Application[ABS-ECU Configuration APA-Test_01.02.00_[]]: BinaryMetadata with persistentIdentity: [12988] is missing.",
+        "BinaryMetadata[HG9C-14C602-AD] with persistentIdentity: [12978]: 'publicKeyHash' must be specified.",
+        "BinaryMetadata[HG9C-14C602-AE] with persistentIdentity: [12988]: 'publicKeyHash' must be specified.",
+        "BinaryMetadata[HG9C-2D053-AD] with persistentIdentity: [12977]: 'publicKeyHash' must be specified.",
+        "BinaryMetadata[HG9C-2D053-AE] with persistentIdentity: [12987]: 'publicKeyHash' must be specified.",
+        "EcuSoftware[ABS_760_HG9C-2D053-AD_[ABS_ABS_SEED_INSTANCE_TEST_0001_01.01.00]] with persistentIdentity: [5568]: 'softwareVersionNumber' must be specified.",
+        "EcuSoftware[ABS_760_HG9C-2D053-AE_[ABS_ABS_SEED_INSTANCE_TEST_0001_01.02.00]] with persistentIdentity: [5574]: 'softwareVersionNumber' must be specified."
+    ]
+}

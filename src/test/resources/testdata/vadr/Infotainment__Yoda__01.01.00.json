@@ -1,0 +1,227 @@
+{
+    "domainName": "Infotainment",
+    "domainDescription": "Domain containing ECG, TCU, SYNC",
+    "ecuNodes": [
+        {
+            "ecuAcronymName": "APIM",
+            "ecuLogicalAddress": "7D0"
+        },
+        {
+            "ecuAcronymName": "ECG",
+            "ecuLogicalAddress": "716"
+        },
+        {
+            "ecuAcronymName": "TCU",
+            "ecuLogicalAddress": "754"
+        }
+    ],
+    "domainInstances": [
+        {
+            "domainInstanceName": "Yoda",
+            "domainInstanceVersion": "01.01.00",
+            "domainInstanceDescription": "8G SYNC with Regular Display, FNV2 TCU and 2 Chip ECG",
+            "releaseState": "RELEASED",
+            "ecuHardwares": [
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuHardwarePartNumber": "KU5T-14GCAC-AA"
+                },
+                {
+                    "ecuAcronymName": "ECG",
+                    "ecuLogicalAddress": "716",
+                    "ecuHardwarePartNumber": "KU5T-14GCAB-AA"
+                },
+                {
+                    "ecuAcronymName": "TCU",
+                    "ecuLogicalAddress": "754",
+                    "ecuHardwarePartNumber": "KU5T-14GCAA-AA"
+                }
+            ],
+            "ecuSoftwares": [
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuSoftwarePartNumber": "HN1T-14GBBB-AB",
+                    "softwareName": "Core Software 2",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 2,
+                        "swPartNumber": "2",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710473391
+                    }
+                },
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuSoftwarePartNumber": "HN1T-14GCCC-AB",
+                    "softwareName": "Core Software 3",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 3,
+                        "swPartNumber": "3",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710473391
+                    }
+                },
+                {
+                    "ecuAcronymName": "ECG",
+                    "ecuLogicalAddress": "716",
+                    "ecuSoftwarePartNumber": "HN1T-14GDDD-AB",
+                    "softwareName": "Core Software 4",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 4,
+                        "swPartNumber": "4",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710473391
+                    }
+                },
+                {
+                    "ecuAcronymName": "TCU",
+                    "ecuLogicalAddress": "754",
+                    "ecuSoftwarePartNumber": "HN1T-14GAAA-AB",
+                    "softwareName": "Core Software 1",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 1,
+                        "swPartNumber": "1",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710473391
+                    }
+                }
+            ],
+            "applications": []
+        },
+        {
+            "domainInstanceName": "Yoda",
+            "domainInstanceVersion": "01.02.00",
+            "domainInstanceDescription": "8G SYNC with Regular Display, FNV2 TCU and 2 Chip ECG",
+            "releaseState": "RELEASED",
+            "ecuHardwares": [
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuHardwarePartNumber": "KU5T-14GCAC-AA"
+                },
+                {
+                    "ecuAcronymName": "ECG",
+                    "ecuLogicalAddress": "716",
+                    "ecuHardwarePartNumber": "KU5T-14GCAB-AA"
+                },
+                {
+                    "ecuAcronymName": "TCU",
+                    "ecuLogicalAddress": "754",
+                    "ecuHardwarePartNumber": "KU5T-14GCAA-AA"
+                }
+            ],
+            "ecuSoftwares": [
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuSoftwarePartNumber": "HN1T-14GBBB-AB",
+                    "softwareName": "Core Software 2",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 2,
+                        "swPartNumber": "2",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710474346
+                    }
+                },
+                {
+                    "ecuAcronymName": "APIM",
+                    "ecuLogicalAddress": "7D0",
+                    "ecuSoftwarePartNumber": "HN1T-14GCCC-AB",
+                    "softwareName": "Core Software 3",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 3,
+                        "swPartNumber": "3",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710474346
+                    }
+                },
+                {
+                    "ecuAcronymName": "ECG",
+                    "ecuLogicalAddress": "716",
+                    "ecuSoftwarePartNumber": "HN1T-14GDDD-AB",
+                    "softwareName": "Core Software 4",
+                    "softwareVersionNumber": "01.01.01",
+                    "binaryMetadata": {
+                        "fileId": 4,
+                        "swPartNumber": "4",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710474346
+                    }
+                },
+                {
+                    "ecuAcronymName": "TCU",
+                    "ecuLogicalAddress": "754",
+                    "ecuSoftwarePartNumber": "HN1T-14GAAA-AC",
+                    "softwareName": "Core Software 5",
+                    "softwareVersionNumber": "01.01.02",
+                    "binaryMetadata": {
+                        "fileId": 5,
+                        "swPartNumber": "5",
+                        "programLogicalBlocks": [],
+                        "eraseLogicalBlocks": [],
+                        "verificationLogicalBlocks": [],
+                        "unzippedFileSize": 0,
+                        "zippedFileSize": 0,
+                        "programProtected": false,
+                        "lastModifiedTimestamp": 1532710474346
+                    }
+                }
+            ],
+            "applications": []
+        }
+    ],
+    "domainDependencies": [],
+    "validationWarnings": [
+        "EcuSoftware[APIM_7D0_HN1T-14GBBB-AB_[Infotainment_Yoda_01.01.00]] with persistentIdentity: [2]: BinaryMetadata with persistentIdentity: [2] is missing.",
+        "EcuSoftware[APIM_7D0_HN1T-14GBBB-AB_[Infotainment_Yoda_01.02.00]] with persistentIdentity: [2]: BinaryMetadata with persistentIdentity: [2] is missing.",
+        "EcuSoftware[APIM_7D0_HN1T-14GCCC-AB_[Infotainment_Yoda_01.01.00]] with persistentIdentity: [3]: BinaryMetadata with persistentIdentity: [3] is missing.",
+        "EcuSoftware[APIM_7D0_HN1T-14GCCC-AB_[Infotainment_Yoda_01.02.00]] with persistentIdentity: [3]: BinaryMetadata with persistentIdentity: [3] is missing.",
+        "EcuSoftware[ECG_716_HN1T-14GDDD-AB_[Infotainment_Yoda_01.01.00]] with persistentIdentity: [4]: BinaryMetadata with persistentIdentity: [4] is missing.",
+        "EcuSoftware[ECG_716_HN1T-14GDDD-AB_[Infotainment_Yoda_01.02.00]] with persistentIdentity: [4]: BinaryMetadata with persistentIdentity: [4] is missing.",
+        "EcuSoftware[TCU_754_HN1T-14GAAA-AB_[Infotainment_Yoda_01.01.00]] with persistentIdentity: [1]: BinaryMetadata with persistentIdentity: [1] is missing.",
+        "EcuSoftware[TCU_754_HN1T-14GAAA-AC_[Infotainment_Yoda_01.02.00]] with persistentIdentity: [5]: BinaryMetadata with persistentIdentity: [5] is missing."
+    ]
+}

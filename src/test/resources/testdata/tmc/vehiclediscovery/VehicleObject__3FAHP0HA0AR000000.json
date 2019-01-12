@@ -1,0 +1,436 @@
+{
+	"modified" : "2018-06-22T15:55:50.368Z",
+    "created": "2018-01-23T16:18:11.648Z",
+    "tags": {
+        "deploymentProtocol": "rest",
+        "campaignID": "IVSU_0001",
+        "deploymentURL": "http://www.httpbin.org/post",
+        "domain": "infotainment",
+        "domainInstance": "Rose",
+        "domainInstanceVersion": "1.2",
+        "programCode": "C344N",
+        "modelYear": "2017"
+    },
+    "tenant_id": "ed67d6c9-3f14-4e7d-8d08-94265a53f326",
+	"name" : "3FAHP0HA0AR000000",
+	"id" : "83ee69d0-2bd0-461c-a7eb-695aea9e8c7b",
+	"type" : "assets/vehicle",
+	"year" : "2010",
+	"pid" : {
+		"id" : "33da0898-bd2c-407f-a4fc-d020b97a31da",
+		"href" : "https://api.autonomic.ai/1/resources/ed67d6c9-3f14-4e7d-8d08-94265a53f326/pids/33da0898-bd2c-407f-a4fc-d020b97a31da"
+	},
+	"model" : "Fusion",	
+	"vin" : "3FAHP0HA0AR000000",
+	"fleet_id" : "f6bb7ab1-acf3-44e7-8882-e9580ddab996",
+	"modules" : [
+		{
+			"name" : "TCU",
+			"address" : "754",
+			"dids" : [
+				{
+					"name" : "F111",
+					"value" : "MU5T-14H026-AA"
+				},
+				{
+					"name" : "F000",
+					"value" : "DAVE-14H027-AA"
+				},
+				{
+					"name" : "F188",
+					"value" : "ZDCA-14G166-AA"
+				},
+				{
+					"name" : "F162",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F163",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE0D",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A012",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F110",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F166",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A010",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F18C",
+					"value" : "ULAT0313"
+				},
+				{
+					"name" : "DE13",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F10A",
+					"value" : "ZDCA-14G166-AA"
+				},
+				{
+					"name" : "A018",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE01",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE00",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A015",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE06",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F17C",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F113",
+					"value" : "HN1T-14G169-BA"
+				},
+				{
+					"name" : "F17F",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE09",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE08",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "EE10",
+					"value" : "AAAA-Information"
+				}
+			]
+		},
+		{
+			"name" : "PCM",
+			"address" : "7E0",
+			"dids" : [
+				{
+					"name" : "D03E",
+					"value" : "00o6jjzuuPv8Q+lGD43CcGHLBF+aOKRfyVtffX6SACM="
+				},
+				{
+					"name" : "F113",
+					"value" : "HB1T-14G279-BA"
+				},
+				{
+					"name" : "F111",
+					"value" : "HB1T-14G270-BA"
+				},
+				{
+					"name" : "F10A",
+					"value" : "HB1T-14G274-BA"
+				},
+				{
+					"name" : "F188",
+					"value" : "HB1T-14G276-AA"
+				},
+				{
+					"name" : "D704",
+					"value" : "d69f7a78"
+				},
+				{
+					"name" : "F17F",
+					"value" : "BGET0313"
+				}
+			]
+		},
+		{
+			"name" : "ECG",
+			"address" : "716",
+			"dids" : [
+				{
+					"name" : "F111",
+					"value" : "MU5T-14H026-AA"
+				},
+				{
+					"name" : "F000",
+					"value" : "DAVE-14H027-AA"
+				},
+				{
+					"name" : "F001",
+					"value" : "DAVE-14H027-BA"
+				},
+				{
+					"name" : "DE0C",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE0A",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F162",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE0E",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F110",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A011",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F166",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE10",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F113",
+					"value" : "MU5T-14G650-AAA"
+				},
+				{
+					"name" : "DE03",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "D023",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F108",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE01",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A017",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE07",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "8065",
+					"value" : "[{\"didValue\":\"checkWindows3\",\"fileType\":\"script\",\"version\":\"1.8\"},{\"didValue\":\"monitorInteriorForMotion3\",\"fileType\":\"script\",\"version\":\"1.0\"}]"
+				},
+				{
+					"name" : "F16B",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE05",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "8061",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F17F",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "8066",
+					"value" : "Script.2,Script.8,Script.7"
+				},
+				{
+					"name" : "F18C",
+					"value" : "ECGT0343"
+				},
+				{
+					"name" : "EE10",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F15F",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE0B",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE0F",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F163",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F188",
+					"value" : "MU5T-14H021-AA"
+				},
+				{
+					"name" : "D704",
+					"value" : "d69f7a78"
+				},
+				{
+					"name" : "DE14",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE02",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE12",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F111",
+					"value" : "MU5T-14H026-AA"
+				},
+				{
+					"name" : "F109",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE00",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "A016",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "8060",
+					"value" : "5a4235542d3134473432332d4141000000000000000000005a4235542d3134473339312d4142"
+				},
+				{
+					"name" : "A014",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "F17C",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "DE04",
+					"value" : "AAAA-Information"
+				},
+				{
+					"name" : "8033",
+					"value" : "MU5T-14H027-AA"
+				},
+				{
+					"name" : "F10A",
+					"value" : "AAAA-Information"
+				}
+			]
+		},
+		{
+			"name" : "BCM",
+			"address" : "726",
+			"dids" : [
+				{
+					"name" : "F10A",
+					"value" : "HB1T-14G374-BA"
+				},
+				{
+					"name" : "F188",
+					"value" : "HB1T-14G376-AA"
+				},
+				{
+					"name" : "D03E",
+					"value" : "00o6jjzuuPv8Q+lGD42CcBMLBF+aOKRfyVtffX6SACM="
+				},
+				{
+					"name" : "F113",
+					"value" : "HB1T-14G379-BA"
+				},
+				{
+					"name" : "F111",
+					"value" : "HB1T-14G370-BA"
+				},
+				{
+					"name" : "F17F",
+					"value" : "BGFT0313"
+				},
+				{
+					"name" : "D704",
+					"value" : "d69f7a78"
+				}
+			]
+		},
+		{
+			"name" : "APIM",
+			"address" : "7D0",
+			"dids" : [
+				{
+					"name" : "F111",
+					"value" : "HN1T-14G380-BA"
+				},
+				{
+					"name" : "8065",
+					"value" : "[{\"didValue\":\"checkWindows3\",\"fileType\":\"script\",\"version\":\"1.8\"},{\"didValue\":\"monitorInteriorForMotion3\",\"fileType\":\"script\",\"version\":\"1.0\"}]"
+				},
+				{
+					"name" : "8060",
+					"value" : "5a4235542d3134473432332d4141000000000000000000005a4235542d3134473339312d4142"
+				},
+				{
+					"name" : "F124",
+					"value" : "HN1T-14G382-BA"
+				},
+				{
+					"name" : "D03E",
+					"value" : "00o6jjzuuPv8Q+lGD42CcBMLBF+aOKRfyVtffX6SACM="
+				},
+				{
+					"name" : "F188",
+					"value" : "ZDCA-14G386-AA"
+				},
+				{
+					"name" : "F113",
+					"value" : "HN1T-14G389-BA"
+				},
+				{
+					"name" : "8033",
+					"value" : "ZDCA-14G381-AA"
+				},
+				{
+					"name" : "F18C",
+					"value" : "WQAT2345"
+				},
+				{
+					"name" : "F141",
+					"value" : "WQAT0313"
+				},
+				{
+					"name" : "D704",
+					"value" : "d69f7a78"
+				}
+			]
+		}
+	],
+	"make" : "Digital Jukebox Technologies. LLC.",
+	"trim" : ""
+}

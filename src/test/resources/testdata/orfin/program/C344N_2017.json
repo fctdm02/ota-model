@@ -1,0 +1,1066 @@
+{
+	"parentProgram": {
+		"programCode": "C344N"
+	},
+	"parentModelYear": {
+		"modelYearValue": 2017
+	},
+	"odl": {
+		"odlName": "odllName1",
+		"networks": [{
+			"networkName": "networkName1",
+			"protocol": "protocol1",
+			"dataRate": "dataRate1",
+			"dclName": "dclName1",
+			"networkPins": "pins1",
+			"nodes": [{
+				"acronym": "acronym0",
+				"address": "address0",
+				"fesn": "fesn0",
+				"publicKeyHash": "publicKeyHash0",
+				"gatewayType": "gatewayType0",
+				"diagnosticSpecificationResponse": "diagnosticSpecificationResponse0",
+				"hasConditionBasedOnDtc": true,
+				"isOvtp": true,
+				"ovtpDestinationAddress": "ovtpDestinationAddress0",
+				"specificationCategoryType": "GGDS",
+				"dids": [{
+					"didName": "didName0",
+					"format": "format0",
+					"length": 32,
+					"description": "description0",
+					"value": "value0",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}, {
+					"didName": "didName1",
+					"format": "format1",
+					"length": 32,
+					"description": "description1",
+					"value": "value1",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}],
+				"ignoredDids": []
+			}, {
+				"acronym": "acronym1",
+				"address": "address1",
+				"fesn": "fesn1",
+				"publicKeyHash": "publicKeyHash1",
+				"gatewayType": "gatewayType1",
+				"diagnosticSpecificationResponse": "diagnosticSpecificationResponse1",
+				"hasConditionBasedOnDtc": true,
+				"isOvtp": true,
+				"ovtpDestinationAddress": "ovtpDestinationAddress1",
+				"specificationCategoryType": "GGDS",
+				"dids": [{
+					"didName": "didName0",
+					"format": "format0",
+					"length": 32,
+					"description": "description0",
+					"value": "value0",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}, {
+					"didName": "didName1",
+					"format": "format1",
+					"length": 32,
+					"description": "description1",
+					"value": "value1",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}],
+				"ignoredDids": []
+			}]
+		}, {
+			"networkName": "networkName2",
+			"protocol": "protocol2",
+			"dataRate": "dataRate2",
+			"dclName": "dclName2",
+			"networkPins": "pins2",
+			"nodes": [{
+				"acronym": "acronym0",
+				"address": "address0",
+				"fesn": "fesn0",
+				"publicKeyHash": "publicKeyHash0",
+				"gatewayType": "gatewayType0",
+				"diagnosticSpecificationResponse": "diagnosticSpecificationResponse0",
+				"hasConditionBasedOnDtc": true,
+				"isOvtp": true,
+				"ovtpDestinationAddress": "ovtpDestinationAddress0",
+				"specificationCategoryType": "PART2_SPEC",
+				"dids": [{
+					"didName": "didName0",
+					"format": "format0",
+					"length": 32,
+					"description": "description0",
+					"value": "value0",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}, {
+					"didName": "didName1",
+					"format": "format1",
+					"length": 32,
+					"description": "description1",
+					"value": "value1",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}],
+				"ignoredDids": []
+			}, {
+				"acronym": "acronym1",
+				"address": "address1",
+				"fesn": "fesn1",
+				"publicKeyHash": "publicKeyHash1",
+				"gatewayType": "gatewayType1",
+				"diagnosticSpecificationResponse": "diagnosticSpecificationResponse1",
+				"hasConditionBasedOnDtc": true,
+				"isOvtp": true,
+				"ovtpDestinationAddress": "ovtpDestinationAddress1",
+				"specificationCategoryType": "PART2_SPEC",
+				"dids": [{
+					"didName": "didName0",
+					"format": "format0",
+					"length": 32,
+					"description": "description0",
+					"value": "value0",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}, {
+					"didName": "didName1",
+					"format": "format1",
+					"length": 32,
+					"description": "description1",
+					"value": "value1",
+					"vinSpecificDidFlag": true,
+					"directConfigurationDidFlag": true,
+					"privateNetworkDidFlag": true,
+					"hasConditionBasedOnDtc": true
+				}],
+				"ignoredDids": []
+			}]
+		}],
+		"programModelYears": [{
+			"parentProgram": {
+				"programCode": "C344N"
+			},
+			"parentModelYear": {
+				"modelYearValue": 2017
+			},
+			"deliveryRuleSets": []
+		}],
+		"ecgSignals": [],
+		"customOdls": []
+	},
+	"policySet": {
+		"policySetName": "policySetName1",
+		"policies": [{
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Airbag_Status",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Automatic Periodic Trigger Days",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "30"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Automatic Periodic Trigger Ignition Count",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "265"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Automatic Periodic Trigger Mileage",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "10000"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Automatic PeriodicTrigger Authorization Level",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "Level2Authorization"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Battery SOC",
+			"policyDescription": "The minimum value required on SOC prior to any action in ignition off",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "65%"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "ConnectionPriority",
+			"policyDescription": "Array of the connection priority. Top is the highest priority",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "Cellular"
+			},
+			"policyValueType": "ENUM",
+			"policyValueConstraints": "Wi-Fi_Cellular_AppLink",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DCTHNR_Frequency",
+			"policyDescription": "DefaultConTypeHMINotice_Retry frequency",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "48 hrs"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DWPreferedTime",
+			"policyDescription": "The prefered time to download from the cloud",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "2 - 4 AM"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "DOWNLOAD_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DataConsumptionMaxSize",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "50 MB"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DataConsumptionPeriod",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "ConnectionCycle"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DefaultConTypeHMINotice_Retry",
+			"policyDescription": "How many times to display a request for connection to the customer prior to switching connection",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "3"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DefaultConTypeWaitTime",
+			"policyDescription": "Time the vehilce will wait for a connection to be established prior to requesting a customer feedback",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "48 hrs"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": true,
+			"hmi": "None",
+			"vehicleHmiFile": "5",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "DefaultScheduledSetting",
+			"policyDescription": "To display in the HMI a default time that will be used for each update",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "ALLOW"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "Read",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "E_CALL",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Event Based Trigger Authorization Level",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "Level2Authorization"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "HTTPS Client timeout ",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "120 sec"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "DOWNLOAD_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Level1Authorization",
+			"policyDescription": "Safety and security updates. No additional consent provided by customer",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "RegionCountryFile"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "Read/Write",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Level2Authorization",
+			"policyDescription": "This includes all improvements to any component",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "RegionCountryFile"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "Read/Write",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Level3Authorization",
+			"policyDescription": "We require PII information for the update",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "RegionCountryFile"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "Read/Write",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Level4Authorization",
+			"policyDescription": "Digital Jukebox Technologies. LLC. push of software independent of customer authorization",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "RegionCountryFile"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Map Update Authorization Level",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "Level3Authorization"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Master_RESET",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Max Status Chunk Queue Cache Size",
+			"policyDescription": "Default Size limit for upload pending status queue",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "5Mb"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Max Status Chunk Queue number",
+			"policyDescription": "Default number limit for chunks per campaign in upload pending status queue",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "10"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "MaxECUsPerSWCampaign",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "8"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "MaxNumConcurrentSWCampaign",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "3"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "NavLocalUpdateTriggerPeriod",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "48 hrs"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "NotificationStatus",
+			"policyDescription": "The notification will be in the vehicle and any other system that customer has subscribed thru the Owner Webesite",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "YES"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "Read/Write",
+			"vehicleHmiFile": "",
+			"phone": "Read",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "OneTimeAuthorization",
+			"policyDescription": "For a One Time Consent. Display HMI notificaiton that an update is available. This applies to Level2Authorization updates",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "RegionCountryFile"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": true,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": true,
+			"hmi": "Read/Write",
+			"vehicleHmiFile": "4",
+			"phone": "Read",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Policy Update On Update Check",
+			"policyDescription": "Used to check for policy update at time of VIL update check.",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "YES"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "IVSU_TRIGGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Policy Update On X Days",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "VEHICLE_OTA_POLICY"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Policy Update On X Ignition",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "VEHICLE_OTA_POLICY"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Policy Update On X Mileage",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "VEHICLE_OTA_POLICY"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Power_Mode",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "PreActivationNotifaction",
+			"policyDescription": "A reminder for the sw update that will get activated at the chosen time",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "DISPLAY"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": true,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "Read",
+			"vehicleHmiFile": "",
+			"phone": "Read",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "SOC",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "ScheduleTimeRange",
+			"policyDescription": "the range for the software update scheduler",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "24 hrs"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "Read",
+			"vehicleHmiFile": "",
+			"phone": "None",
+			"otaFunction": "OTA_MANAGER_HMI"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Status Chunk Max Size",
+			"policyDescription": "Default IVSU status chunk size for each campaign",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "80K"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Status Upload Medium whitelist",
+			"policyDescription": "Default whitelist medium for status to be upload to cloud",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "Wi-Fi Cellular"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Status chunk cache Max Size",
+			"policyDescription": "Default IVSU status chunk overall size limit",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "640K"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "Status upload frequency",
+			"policyDescription": "Default IVSU status chunk upload frequency",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": "24hr"
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": true,
+			"allowCustomerFeedback": false,
+			"hmi": "None",
+			"vehicleHmiFile": "NONE",
+			"phone": "None",
+			"otaFunction": "OTA_STATUS_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.VehiclePolicy",
+			"policyName": "load_shed ",
+			"policyDescription": "",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.StringValue",
+				"value": ""
+			},
+			"policyValueType": "STRING",
+			"policyValueConstraints": "NONE",
+			"policyOverrides": [],
+			"allowRegionalChangeable": false,
+			"allowUserChangeable": false,
+			"allowServiceChangeable": false,
+			"allowCustomerFeedback": false,
+			"hmi": "",
+			"vehicleHmiFile": "",
+			"phone": "",
+			"otaFunction": "OTA_MANAGER"
+		}, {
+			"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.CloudPolicy",
+			"policyName": "unbreakableManifestTime",
+			"policyDescription": "Time for the vehicle to download/install what is in the manifest as a unit beyond this time the vehicle can break up the rollout",
+			"policyValue": {
+				"@class": "com.djt.cvpp.ota.orfin.policy.mapper.dto.value.NumericValue",
+				"value": 14
+			},
+			"policyValueType": "NUMERIC",
+			"policyValueConstraints": "0_60",
+			"policyOverrides": []
+		}],
+		"programModelYears": [{
+			"parentProgram": {
+				"programCode": "C344N"
+			},
+			"parentModelYear": {
+				"modelYearValue": 2017
+			},
+			"deliveryRuleSets": []
+		}]
+	},
+	"deliveryRuleSets": [{
+		"deliveryRuleSetName": "deliveryRuleSetName1",
+		"authorizedBy": "tmyers28",
+		"domainName": "MayHackathon-ECG",
+		"domainInstanceName": "ECG_Hack_02",
+		"domainInstanceVersion": "01.01.02",
+		"vadrPayload": "{\"domainName\":\"MayHackathon-ECG\",\"domainDescription\":\"Domain containing only ECG for May Hackathon\",\"ecuNodes\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\"}],\"domainInstances\":[{\"domainInstanceName\":\"ECG_Hack_02\",\"domainInstanceVersion\":\"01.01.00\",\"domainInstanceDescription\":\"This is the second round of testing with the ECG Image file received on 6-18\",\"releasedDate\":1577854800000,\"releaseState\":\"RELEASED\",\"productionState\":\"PRODUCTION\",\"ecuHardwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AA\"},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AB\"}],\"ecuSoftwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-AA\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3219,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-AA\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F000\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-BA\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3220,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-BA\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}}],\"applications\":[{\"appId\":\"Control My Car_01.00.00\",\"appName\":\"Control My Car\",\"appVersion\":\"01.00.00\",\"description\":\"Testing app creation\",\"ownerGroup\":\"ECG APP team\",\"ownerKeyContact\":\"Sonita\",\"requiresSubscription\":false,\"applicationNecessity\":\"MANDATORY\",\"releaseState\":\"RELEASED\",\"applicationDependencies\":[],\"binaryMetadatas\":[{\"fileId\":2473,\"ecuAcronymName\":\"ECG\",\"publicKeyHash\":\"4c9184f37cff01bcdc32dc486ec36961\",\"swPartNumber\":\"DG9T-14D901-CA\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-2473\",\"fileName\":\"DG9T-14D901-TT.VBF\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"Test Powertrain-Gas APP for Cruise Control system \",\"unzippedFileSize\":32384,\"zippedFileSize\":0,\"vbfVersion\":\"01.01.00\",\"frameFormat\":\"CAN_EXTENDED\",\"fileChecksum\":\"32864\",\"programProtected\":true,\"firmwareInstallType\":\"FULL\"}]}]},{\"domainInstanceName\":\"ECG_Hack_02\",\"domainInstanceVersion\":\"01.01.01\",\"domainInstanceDescription\":\"This is the second round of testing with the ECG Image file received on 6-18\",\"releasedDate\":1577854800000,\"releaseState\":\"RELEASED\",\"productionState\":\"PRODUCTION\",\"ecuHardwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AA\"},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AB\"}],\"ecuSoftwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-AB\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3219,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-AB\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F000\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-BB\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3220,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-BB\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}}],\"applications\":[{\"appId\":\"Control My Car_01.00.01\",\"appName\":\"Control My Car\",\"appVersion\":\"01.00.01\",\"description\":\"Testing app creation\",\"ownerGroup\":\"ECG APP team\",\"ownerKeyContact\":\"Sonita\",\"requiresSubscription\":false,\"applicationNecessity\":\"MANDATORY\",\"releaseState\":\"RELEASED\",\"applicationDependencies\":[],\"binaryMetadatas\":[{\"fileId\":2473,\"ecuAcronymName\":\"ECG\",\"publicKeyHash\":\"4c9184f37cff01bcdc32dc486ec36961\",\"swPartNumber\":\"DG9T-14D901-CB\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-2473\",\"fileName\":\"DG9T-14D901-TT.VBF\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"Test Powertrain-Gas APP for Cruise Control system \",\"unzippedFileSize\":32384,\"zippedFileSize\":0,\"vbfVersion\":\"01.01.00\",\"frameFormat\":\"CAN_EXTENDED\",\"fileChecksum\":\"32864\",\"programProtected\":true,\"firmwareInstallType\":\"FULL\"}]}]},{\"domainInstanceName\":\"ECG_Hack_02\",\"domainInstanceVersion\":\"01.01.02\",\"domainInstanceDescription\":\"This is the second round of testing with the ECG Image file received on 6-18\",\"releasedDate\":1577854800000,\"releaseState\":\"RELEASED\",\"productionState\":\"PRODUCTION\",\"ecuHardwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AA\"},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuHardwarePartNumber\":\"MU5T-14H026-AB\"}],\"ecuSoftwares\":[{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-AC\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3219,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-AC\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F000\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}},{\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"ecuSoftwarePartNumber\":\"DAVE-14H027-BC\",\"softwareName\":\"ECG_Image_Test.txt\",\"binaryMetadata\":{\"fileId\":3220,\"ecuAcronymName\":\"ECG\",\"ecuLogicalAddress\":\"716\",\"swPartNumber\":\"DAVE-14H027-BC\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-3219\",\"fileName\":\"ECG_Image_Test.txt\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"ECG_Image\",\"unzippedFileSize\":85,\"zippedFileSize\":0,\"vbfVersion\":\"3.0\",\"frameFormat\":\"CAN_STANDARD\",\"fileChecksum\":\"0x8071365a\",\"programProtected\":true}}],\"applications\":[{\"appId\":\"Control My Car_01.00.00\",\"appName\":\"Control My Car\",\"appVersion\":\"01.00.00\",\"description\":\"Testing app creation\",\"ownerGroup\":\"ECG APP team\",\"ownerKeyContact\":\"Sonita\",\"requiresSubscription\":false,\"applicationNecessity\":\"MANDATORY\",\"releaseState\":\"RELEASED\",\"applicationDependencies\":[],\"binaryMetadatas\":[{\"fileId\":2473,\"ecuAcronymName\":\"ECG\",\"publicKeyHash\":\"4c9184f37cff01bcdc32dc486ec36961\",\"swPartNumber\":\"DG9T-14D901-CC\",\"legacySwPartType\":\"EXE\",\"swCategory\":\"BINARY_APPLICATION\",\"swClassification\":\"PRODUCTION\",\"didAddress\":\"F001\",\"isOvtp\":true,\"programLogicalBlocks\":[],\"eraseLogicalBlocks\":[],\"verificationLogicalBlocks\":[],\"autonomicUrl\":\"https://telematics.autonomic.ai/1/bytestream/AU_Digital Jukebox Technologies. LLC._VADR_QAT-2473\",\"fileName\":\"DG9T-14D901-TT.VBF\",\"fileFormat\":\"APPLICATION_BINARY\",\"description\":\"Test Powertrain-Gas APP for Cruise Control system \",\"unzippedFileSize\":32384,\"zippedFileSize\":0,\"vbfVersion\":\"01.01.00\",\"frameFormat\":\"CAN_EXTENDED\",\"fileChecksum\":\"32864\",\"programProtected\":true,\"firmwareInstallType\":\"FULL\"}]}]}],\"domainDependencies\":[],\"validationWarnings\":[]}",
+		"deliveryRules": [{
+			"ruleName": "ruleName1",
+			"ruleValue": "ruleValue1"
+		}, {
+			"ruleName": "ruleName2",
+			"ruleValue": "ruleValue2"
+		}],
+		"deliveryRuleSetChannels": [{
+			"deliveryAudience": "CONSUMER",
+			"deliveryChannel": "CELLULAR",
+			"precedenceLevel": 1,
+			"allowable": true
+		}, {
+			"deliveryAudience": "CONSUMER",
+			"deliveryChannel": "WIFI",
+			"precedenceLevel": 2,
+			"allowable": true
+		}, {
+			"deliveryAudience": "ENGINEERING",
+			"deliveryChannel": "CELLULAR",
+			"precedenceLevel": 1,
+			"allowable": true
+		}, {
+			"deliveryAudience": "ENGINEERING",
+			"deliveryChannel": "WIFI",
+			"precedenceLevel": 2,
+			"allowable": true
+		}, {
+			"deliveryAudience": "SERVICE",
+			"deliveryChannel": "CELLULAR",
+			"precedenceLevel": 1,
+			"allowable": true
+		}, {
+			"deliveryAudience": "SERVICE",
+			"deliveryChannel": "WIFI",
+			"precedenceLevel": 2,
+			"allowable": true
+		}],
+		"programModelYears": [{
+			"parentProgram": {
+				"programCode": "C344N"
+			},
+			"parentModelYear": {
+				"modelYearValue": 2017
+			},
+			"deliveryRuleSets": []
+		}],
+		"programCodeModelYearInclusions": ["C344N_2017"]
+	}]
+}

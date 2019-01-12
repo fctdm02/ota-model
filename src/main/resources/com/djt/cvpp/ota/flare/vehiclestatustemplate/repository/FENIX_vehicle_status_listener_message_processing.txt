@@ -1,0 +1,169 @@
+-- =================================================================
+-- TMC/AU to FENIX Vehicle Status Message (time-critical) Processing
+-- =================================================================
+--
+-- Additional Parameters are status specific and the data types, as well as names are given here.
+--
+-- The purpose of the DAKOTA VehicleStatusListener will be to:
+--    1.  Receive deployment related vehicle status message events from TMC/AU via their VSS web socket API
+--    2.  Transform  each status message from the source TMC/AU format to the destination format (RolloutDataAccessorRequest)
+--
+-- The main work will be to parse out the first 3 values (everything is delimited by underscore characters, '_') in order to determine the identity of a particular status message,
+-- then, based on that particular status message, parse the additional parameters as given below.
+--
+-- The end result is that for a given TMC/AU source message:
+-- =========================================================
+--{
+--    "request_id": "zelda",
+--    "vehicle_id": "a4e1bf00-d5a9-42c6-a6b4-43573426467f",
+--    "timestamp": "2018-03-22T23:31:22.142Z",
+--    "fields": {"deployment": {
+--        "correlation_id": {
+--            "time": "2018-03-22T23:31:22.142Z",
+--            "value": "8a679b5e-6872-45ad-89ac-4bd4d3d9d41f"
+--        },
+--        "state": {
+--            "time": "2018-03-22T23:31:22.142Z",
+--            "value": "DEPLOYING"
+--        },
+--        "additional_data": {
+--            "time": "2018-03-22T23:31:22.142Z",
+--            "value": "{ \"campaignID\": \"8a679b5e-6872-45ad-89ac-4bd4d3d9d41f\" }, { \"lookupCode\": \"OTAM_S1007_1_2_7\" }"
+--        }
+--    }}
+--}
+--
+-- We have the following RolloutDataAccessorRequest:
+-- =================================================
+--{
+--    "vehicleId": "a4e1bf00-d5a9-42c6-a6b4-43573426467f",
+--    "entries": [{
+--        "time": 1521761482142,
+--        "lookupCode": "OTAM_S1007",
+--        "message": "numberOfSuccessFiles: 1 | numberOfSkipFiles: 2 | totalNumberOfFiles: 7"
+--    }],
+--    "campaignID": "8a679b5e-6872-45ad-89ac-4bd4d3d9d41f"
+--}
+--
+--
+-- (Notice how the additional parameters in the source message just have the values, whereas the RolloutDataAccessorRequest has them prefixed by their name, with each
+-- name value pair delimited by the pipe symbol, '|', i.e.
+-- additional parameter1: value 1 | additional parameter2: value2 | additional parameterN: valueN
+--
+--
+-- Column Number:
+-- 1 - OTA function abbreviation
+-- 2 - Prefix: either 'S' (for happy path) or 'E' (for error path)
+-- 3 - Lookup code
+-- 4 - Additional parameters data type expression
+-- 5 - Additional parameters label expression
+-- 6 - Example status message sent from vehicle
+--
+-- =============================================================================================================================================================================================================================================================
+OTAM,S,1001,num_num_num,triggerType_authorizationLevel_expirationTimeinHours,OTAM_S1001_1_2_720
+OTAM,S,1002,num_bool,consentResourceCode_result,OTAM_S1002_2_true
+OTAM,S,1003,num_num,responseType_responsetimeInMilliseconds,OTAM_S1003_2_40
+OTAM,S,1004,(str_str_str)+,(ecu!N!_filename!N!_softwarePartNumberOrSoftwareVersion!N!)+,OTAM_S1004_SYNC_fmel.tar.gz_14G43-23495-AA_ABS_efgh.vbf_22222-22222-BB
+OTAM,S,1005,num,combinationOfAdditionalFiles,OTAM_S1005_4
+OTAM,S,1006,(str_num)+,(filename!N!_fileLength!N!InBytes)+,OTAM_S1006_abcd.vbf_2032_fmel.tar.gz_23498239522
+OTAM,S,1007,num_num_num,numberOfSuccessFiles_numberOfSkipFiles_totalNumberOfFiles,OTAM_S1007_4_4_8
+OTAM,S,1008,num_num_num,numberOfSuccessFiles_numberOfSkipFiles_totalNumberOfFiles,OTAM_S1008_7_0_8
+OTAM,S,1009,num_num_num,numberOfSuccessFiles_numberOfSkipFiles_totalNumberOfFiles,OTAM_S1009_1_0_1
+OTAM,S,1010,num_num_num_num_num,timeForTriggerCampaignInSecs_timeforPostVilInSecs_timeForInstallationInSecs_timeForActivationRollbackInSecs_otaTotalWakeupTimeInSecs,OTAM_S1010_100_234_456_234_2969
+OTAM,S,1011,num_num,type_reason,OTAM_S1011_1_34
+OTAM,S,1012,str,scheduleTime,OTAM_S1012_1521761482142
+OTAM,S,1013,num,notificationSettings,OTAM_S1013_2
+OTAM,S,1014,num,consentSetting,OTAM_S1014_3
+OTAM,S,1015
+OTAM,S,1016,num_num,statusCode_reasonCode,OTAM_S1016_2_13
+OTAM,E,1001,num,reasonCode,OTAM_E1001_1
+VIL,E,1001,num,reasonCode,VIL_E1001_1
+OTAM,E,1002
+OTAM,E,1003,num,reasonCode,OTAM_E1003_1
+OTAM,E,1004,num,reasonCode,OTAM_E1004_1
+OTAM,E,1005,num,reasonCode,OTAM_E1005_2
+OTAM,E,1006,num,reasonCode,OTAM_E1006_3
+OTAM,E,1007,(str_num)+,(filename!N!_mismatchTypeCode!N!)+,OTAM_E1007_ads-34.tar.gz_3_e2d.vbf_3
+DWM,E,1001,(num_str_str_num)+,(totalRetryTime!N!_filename!N!_uri!N!_failReasonCode!N!)+,DWM_E1001_5_ads-34.tar.gz_F:\IVSU\MYDrive\ads-34.tar.gz_5_5_bbbb.tar.gz_F:\IVSU\MYDrive\bbbb.tar.gz_9
+OAOCC,E,1001,str_str_num,ecu_filename_failureCode,OAOCC_E1001_ABS_ASD.VBF_5
+OAEC,E,1001,str_str_num,ecu_filename_failureCode,OAEC_E1001_ABS_ASD.VBF_5
+SIM,E,1001,str_str_num,ecu_filename_failureCode,SIM_E1001_ABS_ASD.VBF_5
+OTAM,E,1008,num_(str)+,reasonCode_(ecu!N!)+,OTAM_E1008_3_ABS_CLUSTER
+OAOCC,E,1002,str_num,ecu_reasonCode,OAOCC_E1002_ABS_5
+OAEC,E,1002,str_num,ecu_reasonCode,OAEC_E1002_ABS_5
+OAOCC,E,1003,str_num,ecu_reasonCode,OAOCC_E1003_ABS_5
+OAEC,E,1003,str_num,ecu_reasonCode,OAEC_E1003_ABS_5
+OAOCC,E,1004,str_num,ecu_reasonCode,OAOCC_E1004_ABS_5
+OAEC,E,1004,str_num,ecu_reasonCode,OAEC_E1004_ABS_5
+OAOCC,E,1005,str_num,ecu_reasonCode,OAOCC_E1005_ABS_5
+OAEC,E,1005,str_num,ecu_reasonCode,OAEC_E1005_ABS_5
+SIM,E,1002,(str_str_num)+,(ecu!N!_filename!N!_failureCode!N!)+,SIM_E1002_ABS_asdw.vbf_5_ABS_aaaa.vbf_5
+OTAM,E,1009,num,reasonCode,OTAM_E1009_5
+OTAM,S,0000,str,BLANK-LABEL,OTAM_S0000_'OTAM Happy Path Engineering Message Goes Here'
+OTAM,E,0000,str,BLANK-LABEL,OTAM_E0000_'OTAM Error Path Engineering Message Goes Here'
+OAEC,S,0000,str,BLANK-LABEL,OAEC_S0000_'OAEC Happy Path Engineering Message Goes Here'
+OAEC,E,0000,str,BLANK-LABEL,OAEC_E0000_'OAEC Error Path Engineering Message Goes Here'
+OAES,S,0000,str,BLANK-LABEL,OAES_S0000_'OAES Happy Path Engineering Message Goes Here'
+OAES,E,0000,str,BLANK-LABEL,OAES_E0000_'OAES Error Path Engineering Message Goes Here'
+OAOCC,S,0000,str,BLANK-LABEL,OAOCC_S0000_'OAOCC Happy Path Engineering Message Goes Here'
+OAOCC,E,0000,str,BLANK-LABEL,OAOCC_E0000_'OAOCC Error Path Engineering Message Goes Here'
+OAOCS,S,0000,str,BLANK-LABEL,OAOCC_S0000_'OAOCS Happy Path Engineering Message Goes Here'
+OAOCS,E,0000,str,BLANK-LABEL,OAOCC_E0000_'OAOCS Error Path Engineering Message Goes Here'
+OTAH,S,0000,str,BLANK-LABEL,OTAH_S0000_'OTAH Happy Path Engineering Message Goes Here'
+OTAH,E,0000,str,BLANK-LABEL,OTAH_E0000_'OTAH Error Path Engineering Message Goes Here'
+VSM,S,0000,str,BLANK-LABEL,VSM_S0000_'VSM Happy Path Engineering Message Goes Here'
+VSM,E,0000,str,BLANK-LABEL,VSM_E0000_'VSM Error Path Engineering Message Goes Here'
+VIL,S,0000,str,BLANK-LABEL,VIL_S0000_'VIL Happy Path Engineering Message Goes Here'
+VIL,E,0000,str,BLANK-LABEL,VIL_E0000_'VIL Error Path Engineering Message Goes Here'
+OTATGR,S,0000,str,BLANK-LABEL,OTATGR_S0000_'OTATGR Happy Path Engineering Message Goes Here'
+OTATGR,E,0000,str,BLANK-LABEL,OTATGR_E0000_'OTATGR Error Path Engineering Message Goes Here'
+DRTCFG,S,0000,str,BLANK-LABEL,DRTCFG_S0000_'DRTCFG Happy Path Engineering Message Goes Here'
+DRTCFG,E,0000,str,BLANK-LABEL,DRTCFG_E0000_'DRTCFG Error Path Engineering Message Goes Here'
+IOSF,S,0000,str,BLANK-LABEL,IOSF_S0000_'IOSF Happy Path Engineering Message Goes Here'
+IOSF,E,0000,str,BLANK-LABEL,IOSF_E0000_'IOSF Error Path Engineering Message Goes Here'
+DWM,S,0000,str,BLANK-LABEL,DWM_S0000_'DWM Happy Path Engineering Message Goes Here'
+DWM,E,0000,str,BLANK-LABEL,DWM_E0000_'DWM Error Path Engineering Message Goes Here'
+CAVC,S,0000,str,BLANK-LABEL,CAVC_S0000_'CAVC Happy Path Engineering Message Goes Here'
+CAVC,E,0000,str,BLANK-LABEL,CAVC_E0000_'CAVC Error Path Engineering Message Goes Here'
+--
+--
+-- WHERE:
+-- (X)+ denotes a repeating group of 1 to N groups defined by "X" in the "Additional parameter type expression" column and parameter substitution is done on !N!
+-- in the "Additional parameter label expression" column (where !N! is replaced with the appropriate value from the sequence 1...N)
+--
+-- EXAMPLE:
+-- For status message OTAM_S1004, we have:
+--      additional parameter data type expression: (str_str_str)+
+--      additional parameter label expression: (ecu!N!_filename!N!_softwarePartNumberOrSoftwareVersion!N!)+
+--
+--  For a given vehicle status message value of: OTAM_S1004_SYNC_fmel.tar.gz_14G43-23495-AA_ABS_efgh.vbf_22222-22222-BB
+--  the corresponding additional parameter "message" value (as sent to RolloutDataAccessor) would be as follows:
+--       ecu1: SYNC | filename1: fmel.tar.gz | softwarePartNumberOrSoftwareVersion1: 14G43-23495-AA | ecu2: ABS | filename2: efgh.vbf | softwarePartNumberOrSoftwareVersion2: 22222-22222-BB
+--
+--
+-- BLANK-LABEL means that there will be no label prefixing to the addition (that is, there will be no "label1: value1 | label2: value2" construct, it will just be a single string, enclosed by single quotes)
+--
+-- 2: For status message OTAM_S0000, we have:
+--      additional parameter data type expression: str
+--      additional parameter label expression: BLANK-LABEL
+--
+--  For a given vehicle status message value of:
+--      OTAM_S0000_'OTAM Happy Path Engineering Message Goes Here'
+--
+--  The corresponding additional parameter "message" value (as sent to RolloutDataAccessor) would be as follows:
+--      "OTAM Happy Path Engineering Message Goes Here"
+--
+--
+-- ASSUMPTIONS:
+-- The TMC/AU message format
+-- 1. The addtl. parm. types are: num (numeric), bool (T/F) and str (string) (no type validation will be done for MVP)                                           Correct
+-- 2. The addtl. parm. names are in lower camel case format (see: http://wiki.c2.com/?LowerCamelCase)                                                            Correct
+-- 3. OTA Function abbreviation + Prefix + Lookup code form a *UNIQUE* identity for a particular time-critical vehicle status message? e.g. OTAM_E_1001 vs. VIL_E_1001 (additional parameters do not factor into the identity) Correct, one status can only be assigned with one type of OTA Function abbreviation + Prefix + Lookup code combination.
+-- 4. Any filenames that have any underscores in their filenames will be pre-processed to have them replaced with dash characters, '-', as underscore characters are used for parsing the additional parameters       OK
+-- 5. Any additional parameter data values (especially filenames), will not have any HTML special characters.  (If there will be, then they need to be HTML encoded)   OK
+-- 6. The "campaignID" that is specified in the "additional_data" field of the source TMC/AU message is the FENIX "campaignID"                                         OK
+--
+--
+-- ADDITIONAL NOTES:
+-- 1: I have normalized the spelling of "filename" and "fileName" to be "filename"
+--
