@@ -31,7 +31,7 @@ import com.djt.cvpp.ota.tmc.vehiclestatus.model.TmcVehicleStatusMessage;
 		1. Any status message with [Any string]_ 'S'[any integers](_[variableinformation])n would be mapped to 'Deploying' TMC state
 		2. Status message which is specifically OTAM_S1010(_[variable information])* will be mapped to 'Deployment succeeded' TMC state
 		3. Any status message with [Any string]_'E'[any integers](_[variableinformation])n will be mapped to an TMC error state
- 
+
  		OTAM_1001 (Trigger received)
 		OTAM_1006 (Download start)
 		OTAM_1007 (Ready to activate)
